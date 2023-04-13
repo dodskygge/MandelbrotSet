@@ -1,0 +1,5 @@
+8000 8000 1000 -2.0 0.47 -1.12 1.12
+
+
+
+szerokosc, wysokosc, max wartosc N w z_n, minRzeczywista, maxRzeczywista, minUrojona, maxUrojona
