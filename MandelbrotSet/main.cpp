@@ -51,7 +51,7 @@ int main() {
 	fin.close(); //zamkniecie buforu
 
 	//FileOutput
-	ofstream fout("fraktal6.ppm");
+	ofstream fout("fraktal.ppm");
 	fout << "P3" << endl; //Naglowek .ppm
 	fout << imageWidth << " " << imageHeight << endl; //Rozmiar
 	fout << "256" << endl; //Max wart. pikseli RGB
@@ -68,15 +68,15 @@ int main() {
 			//Oblicz liczbe iteracji we wzorze Mandelbrota uzywajac wspomnianego c
 			int n = findMandelbrot(cr, ci, maxN);
 
-			//Mapowanie na kolory
-			int r = (  (int)sin(n)/n % 256);
+			//Mapowanie na kolory - można zmienić i pokombinować
+			int r = ( (int) sin(n)/n % 256);
 			int g = (  28  % 256);
 			int b = ( (int) cos(n) * n  % 256);
 
 			//Wyjscie do obrazka
 			fout << r << " " << g << " " << b << " ";
 		}
-		cout << "\033[H" << y << " / " << imageHeight << "px";
+		cout << "\033[H" << y << " / " << imageHeight << " px" << " X " << imageWidth << " px";
 		fout << endl;
 	}
 
