@@ -1,5 +1,12 @@
-8000 8000 1000 -2.0 0.47 -1.12 1.12
+800 800 2000 -0.9978 -0.991 -0.297 -0.2919 fraktal12.ppm
 
 
 
-szerokosc, wysokosc, max wartosc N w z_n, minRzeczywista, maxRzeczywista, minUrojona, maxUrojona
+szerokosc, wysokosc, max wartosc N w z_n, minRzeczywista, maxRzeczywista, minUrojona, maxUrojona, nazwaPlikuWyjsciowego
+
+
+Poprzednie:
+800 800 2000 -1.395 -1.385 -0.017 -0.009 fraktal11.ppm
+
+Fajne:
+800 800 2000 -0.9978 -0.991 -0.297 -0.2919 fraktal12.ppm
